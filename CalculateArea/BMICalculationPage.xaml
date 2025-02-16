@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculateArea.BMICalculationPage"
+             Title="BMI Result">
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+            <Label Text="BMI Result"
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                   FontAttributes="Bold"/>
+
+            <Label Text="{Binding BMI}"
+                   HorizontalOptions="Center"
+                   FontSize="Medium"
+                   FontAttributes="Bold"/>
+
+            <Label Text="{Binding BMICategory}"
+                   HorizontalOptions="Center"
+                   FontSize="Medium"/>
+
+            <Button Text="Health Recommendations"
+                    HorizontalOptions="Center"
+                    Clicked="BtnRecommendations_Clicked"/>
+
+            <Button Text="Back to Input"
+                    HorizontalOptions="Center"
+                    Clicked="BtnBackToInput_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
